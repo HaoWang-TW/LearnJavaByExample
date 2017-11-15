@@ -23,6 +23,7 @@ public class RegExpression {
         String target = "too.*sample";
         String source = "too young to sample";
         String source2 = "too young to sample, hahaha";
+
         Pattern pattern = Pattern.compile(target);
         assertTrue(pattern.matcher(source).matches());// only if whole source string matches
         Pattern pattern2 = Pattern.compile(target);
